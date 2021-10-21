@@ -66,6 +66,7 @@
       <ul class="nav nav-pills">
         <li v-for="page in pages" :key="page" class="nav-item">
           <a
+            @click="p"
             href="#"
             active-class="active"
             :class="{ active: isMatch(page) }"
@@ -98,11 +99,15 @@ export default {
     };
   },
   methods: {
-    isMatch(page) {
+    isMatch(page, e) {
       if (page) {
-        return false;
+        return true;
       } else {
       }
+    },
+    p(e) {
+      e.preventDefault();
+      console.log(e.target.textContent);
     },
   },
 };
@@ -172,5 +177,10 @@ h1 {
 }
 .nav {
   padding: 50px 0 30px 0;
+  transform: translateX(50%);
+  margin-left: -25%;
+}
+.nav a {
+  margin-right: 5px;
 }
 </style>
