@@ -5,7 +5,7 @@
       <p>총 1건</p>
     </div>
 
-    <Table />
+    <Table primary="번호" />
     <Pagination :pages="pages" />
   </div>
 </template>

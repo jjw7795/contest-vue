@@ -191,6 +191,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@import "~/scss/main";
 #apply {
 }
 
@@ -205,9 +207,10 @@ export default {
 }
 
 .apply h2 {
-  padding: 50px 100px 30px;
-  font-size: 22px;
-  color: rgb(16, 16, 134);
+   padding: 70px 0 50px 0;
+  font-size: 70px;
+  text-align: center;
+  color: $primary;
   font-weight: bold;
 }
 .apply h3 {

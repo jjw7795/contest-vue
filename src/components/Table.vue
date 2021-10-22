@@ -9,7 +9,7 @@
       </colgroup>
       <thead>
         <tr>
-          <th>번호</th>
+          <th>{{ primary }}</th>
           <th>제목</th>
           <th>작성일</th>
           <th>조회</th>
@@ -45,6 +45,13 @@
     </table>
   </div>
 </template>
+<script>
+export default {
+  props: {
+    primary: String,
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 .table-box {

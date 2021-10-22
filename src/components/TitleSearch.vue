@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="width: 1200px">
     <h1>{{ title }}</h1>
 
     <div class="input-box">

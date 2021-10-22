@@ -4,7 +4,7 @@
     <div class="count-box">
       <p>총 1건</p>
     </div>
-    <Table />
+    <Table primary="분류" />
     <Pagination :pages="pages" />
   </div>
 </template>
@@ -63,18 +63,5 @@ export default {
   text-indent: 30px;
   font-size: 18px;
   font-weight: bold;
-}
-
-.page-box {
-  width: 80%;
-  margin: auto;
-}
-.nav {
-  padding: 50px 0 30px 0;
-  transform: translateX(50%);
-  margin-left: -25%;
-}
-.nav a {
-  margin-right: 5px;
 }
 </style>

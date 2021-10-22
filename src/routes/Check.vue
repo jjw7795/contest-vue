@@ -41,6 +41,7 @@
 </template>
 
 <style lang="scss" scoped>
+@import "~/scss/main";
 #check {
 }
 
@@ -55,9 +56,10 @@
 }
 
 .check h2 {
-  padding: 50px 100px 30px;
-  font-size: 22px;
-  color:rgb(16, 16, 134);
+  padding: 70px 0 50px 0;
+  font-size: 70px;
+  text-align:center;
+  color:$primary;
   font-weight: bold;
 }
 .check h3 {
@@ -110,11 +112,14 @@
     height: 40px;
     border: none;
     border-radius: 10px;
-    background-color: #999;
-    color: #fff;
+    background-color: rgb(200, 199, 199);
+    color: #000;
     margin-right:5px
 }
-
+.check_button button:hover {
+  background-color:$primary;
+  color:#fff
+}
 .check_info p {
     padding: 20px;
 }

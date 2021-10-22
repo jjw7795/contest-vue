@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 .page-box {
-  width: 80%;
+  width: 50%;
   margin: auto;
 }
 .nav {
