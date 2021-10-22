@@ -1,19 +1,7 @@
 <template>
   <div class="notice">
-    <h1>공지사항</h1>
-
-    <div class="input-box">
-      <input
-        type="text"
-        placeholder="검색어를 입력해주세요"
-        class="form-control"
-        @keyup.enter="apply"
-      />
-      <button class="btn" @click="apply">
-        <span class="material-icons"> search </span>
-      </button>
-    </div>
-
+   
+   <TitleSearch title="공지사항"/>
     <div class="count-box">
       <p>총 1건</p>
     </div>
@@ -92,7 +80,13 @@
 </template>
 
 <script>
+import TitleSearch from "~/components/TitleSearch";
+
+
 export default {
+  components:{
+    TitleSearch
+  },
   data() {
     return {
       pages: [1, 2, 3, 4, 5],
@@ -120,19 +114,7 @@ export default {
   width: 1200px;
   margin: auto;
 }
-h1 {
-  padding: 50px;
-  text-align: center;
-}
-.input-box {
-  display: flex;
-  width: 50%;
-  text-align: center;
-  margin: auto;
-}
-.form-control {
-  outline: none;
-}
+
 .count-box {
   padding: 50px 0 20px 0;
   width: 80%;
@@ -163,14 +145,7 @@ h1 {
   font-size: 18px;
   font-weight: bold;
 }
-.btn {
-  width: 50px;
-  height: 50px;
-  background-color: $primary;
-}
-.material-icons {
-  vertical-align: middle;
-}
+
 .page-box {
   width: 80%;
   margin: auto;
