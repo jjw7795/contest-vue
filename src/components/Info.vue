@@ -69,7 +69,9 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "~/scss/main";
+
 #contest {
   height: 1200px;
 }
@@ -83,7 +85,7 @@
 .contest h2 {
   font-weight: bold;
   font-size: 30px;
-  border-bottom: 3px solid blue;
+  border-bottom: 3px solid $primary;
   padding-bottom: 20px;
 }
 .contest .contest_text {
