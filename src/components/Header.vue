@@ -28,22 +28,22 @@ export default {
         {
           name: "공모전 소개",
           href: "/",
-          image: "src/assets/menu1.png",
+          image: "../assets/menu1.png",
         },
         {
           name: "공모전 요강",
           href: "/pot",
-          image: "src/assets/menu2.png",
+          image: "../assets/menu2.png",
         },
         {
           name: "작품 접수",
           href: "/apply",
-          image: "src/assets/menu3.png",
+          image: "../assets/menu3.png",
         },
         {
           name: "접수 확인",
           href: "/check",
-          image: "src/assets/menu4.png",
+          image: "../assets/menu4.png",
         },
         {
           name: "공지사항",
