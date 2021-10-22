@@ -96,9 +96,9 @@
            
             <tr>
                <th>&#183 이메일</th>
-              <td><input type="text">@<input class="email02" type="text" :value="selected">
-              <select name="email" id="email" v-model="selected">
-                <option value="직접입력">직접입력</option>
+              <td><input type="text">@<input class="email02" type="text" :value="select">
+              <select name="email" id="email" v-model="select">
+                <option selected value="직접입력">직접입력</option>
                 <option value="naver.com">naver.com</option>
                 <option value="daum.com">daum.com</option>
                 
@@ -137,7 +137,7 @@ export default {
     data(){
         return {
            checked:false,
-           selected:''
+           select:''
         }
     },
     methods:{
