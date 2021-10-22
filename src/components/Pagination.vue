@@ -37,13 +37,13 @@ export default {
 
 <style lang="scss" scoped>
 .page-box {
-  width: 50%;
+  width: 100%;
   margin: auto;
 }
 .nav {
+  display: flex;
+  justify-content: center;
   padding: 50px 0 30px 0;
-  transform: translateX(50%);
-  margin-left: -25%;
 }
 .nav a {
   margin-right: 5px;

@@ -81,7 +81,7 @@
             <tr class="address">
                <th rowspan="3" valign="middle">&#183 주소</th>
               <td ><input type="text" id="postcode" placeholder="우편번호">
-                 <input @click="addressPost" type="button" value="우편번호 찾기"></td>
+                 <input @click="addressPost" type="button" class="post-search" value="우편번호 찾기"></td>
             </tr>
               <tr>
            
@@ -308,5 +308,11 @@ th {
   margin-left: 5px;
   outline: 0;
 }
-
+.post-search {
+  font-weight: bold;
+}
+.post-search:hover{
+  background: $primary;
+  color:#fff
+}
 </style>
