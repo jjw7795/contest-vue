@@ -5,6 +5,7 @@ import Movie from "./Movie";
 import Apply from "./Apply";
 import Check from "./Check";
 import Notice from "./Notice";
+import Qna from "./Qna";
 import NotFound from "./NotFound";
 
 export default createRouter({
@@ -33,6 +34,10 @@ export default createRouter({
     {
       path: "/notice",
       component: Notice,
+    },
+    {
+      path: "/question",
+      component: Qna,
     },
     {
       path: `/:notFound(.*)`,

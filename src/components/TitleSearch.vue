@@ -1,7 +1,6 @@
 <template>
-<div>
-    <h1>{{title}}</h1>
-    
+  <div>
+    <h1>{{ title }}</h1>
 
     <div class="input-box">
       <input
@@ -19,18 +18,20 @@
 
 <script>
 export default {
-    props:{
-        title:{ type:String, default:""}
-    }
-}
+  props: {
+    title: { type: String, default: "" },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 @import "~/scss/main";
 h1 {
-  padding: 70px 0 30px 0;
+  padding: 70px 0 50px 0;
   text-align: center;
-  color:$primary
+  color: $primary;
+  font-weight: bold;
+  font-size: 70px;
 }
 .input-box {
   display: flex;
@@ -49,5 +50,6 @@ h1 {
 }
 .material-icons {
   vertical-align: middle;
+  font-weight: bold;
 }
 </style>

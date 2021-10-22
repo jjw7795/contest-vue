@@ -50,7 +50,7 @@ export default {
           href: "/notice",
           image: "src/assets/menu5.png",
         },
-        { name: "Q&A", href: "/qua", image: "src/assets/menu6.png" },
+        { name: "Q&A", href: "/question", image: "src/assets/menu6.png" },
       ],
     };
   },
