@@ -37,11 +37,27 @@ export default {
       console.log(res.data);
       this.h = res.data;
     });
-    axios
-      .post("http://localhost:8090/post", JSON.stringify(this.member))
-      .then((res) => {
-        console.log(res.data);
-      });
+    // axios
+    //   .post("http://localhost:8090/post", {
+    //     params: "ggggg",
+    //   })
+    //   .then((res) => {
+    //     console.log(res.data);
+    //   });
+
+    fetch(`http://localhost:8090/post`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: `name=jinwoo`,
+    });
+
+    // axios({
+    //   method: "post",
+    //   url: "http://localhost:8090/post",
+    //   data: "zzzzgdgdfdfdfd",
+    // });
   },
 };
 </script>
