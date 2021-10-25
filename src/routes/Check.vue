@@ -1,5 +1,6 @@
 <template>
     <section id="check">
+       <Header />
       <div class="inner check">
         <h2>접수확인</h2>
         
@@ -39,6 +40,14 @@
       </div>
     </section>
 </template>
+<script>
+import Header from "~/components/Header";
+export default {
+   components: {
+    Header,
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 @import "~/scss/main";

@@ -33,7 +33,7 @@ export default {
         },
         {
           name: "공모전 요강",
-          href: "/pot",
+          href: "/summary",
           image: "src/assets/menu2.png",
         },
         {

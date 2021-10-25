@@ -6,6 +6,8 @@ import Apply from "./Apply";
 import Check from "./Check";
 import Notice from "./Notice";
 import Qna from "./Qna";
+import Summary from "./Summary";
+import AdApply from "./AdApply";
 import NotFound from "./NotFound";
 
 export default createRouter({
@@ -38,6 +40,14 @@ export default createRouter({
     {
       path: "/question",
       component: Qna,
+    },
+    {
+      path: "/summary",
+      component: Summary,
+    },
+    {
+      path: "/admin",
+      component: AdApply,
     },
     {
       path: `/:notFound(.*)`,

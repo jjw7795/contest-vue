@@ -1,4 +1,5 @@
 <template>
+  <Header />
   <div class="notice">
     <TitleSearch title="Q&A" />
     <div class="count-box">
@@ -9,6 +10,7 @@
   </div>
 </template>
 <script>
+import Header from "~/components/Header";
 import TitleSearch from "~/components/TitleSearch";
 import Table from "~/components/Table";
 import Pagination from "~/components/Pagination";
@@ -18,6 +20,7 @@ export default {
     TitleSearch,
     Table,
     Pagination,
+    Header,
   },
   data() {
     return {

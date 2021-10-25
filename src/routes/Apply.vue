@@ -1,5 +1,6 @@
 <template>
    <div id="apply">
+      <Header />
       <div class="inner apply">
         <h2>작품접수</h2>
         
@@ -132,8 +133,11 @@
 </template>
 
 <script>
-
+import Header from "~/components/Header";
 export default {
+  components: {
+    Header
+  },
     data(){
         return {
            checked:false,
